@@ -1,0 +1,161 @@
+ 
+body{
+    
+    color: white;
+    /* background-image: linear-gradient(to top left,#ffe29f,#ffa29f,#ff719a); */
+     /* background-image: linear-gradient(180deg,#ffe29f,#ffa29f,#ff719a); */
+    background-color: #312d2e;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+.bubble{
+    list-style: none; 
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    
+}
+.bubble li{
+    width: 80px;
+    height: 80px;
+    background-image: url(img/character.jpg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    bottom:-160px;
+    animation: bubbles 10s linear infinite;
+    border-radius: 100px;
+}
+.bubble li:nth-child(1){
+    left: 5%;
+}
+.bubble li:nth-child(2){
+    left: 10%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 2s;
+    animation-duration: 17s;
+}
+.bubble li:nth-child(3){
+    left: 25%;
+    animation-delay: 4s;
+}
+.bubble li:nth-child(4){
+    left: 30%;
+    width: 120px;
+    height: 120px;
+    background-color: rgba(255,255,255,0.25);
+    animation-duration: 22s;
+}
+.bubble li:nth-child(5){
+    left: 50%;
+}
+.bubble li:nth-child(6){
+    display: none;
+}
+.bubble li:nth-child(7){
+    display: none;
+}
+.bubble li:nth-child(8){
+   display: none;
+}
+.bubble li:nth-child(9){
+    left: 25%;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255,255,255,0.3);
+    animation-delay: 2s;
+    animation-duration: 40s;
+}
+.bubble li:nth-child(10){
+    left: 90%;
+    width: 160px;
+    height: 160px;
+    animation-delay: 11s;
+   
+}
+@keyframes bubbles{
+    0%{transform: translateY(0);}
+    100%{transform: translateY(-750%);}
+} 
+.danmu{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    
+}
+.danmu li{
+    font-size: 20px;
+    animation:danmus 10s infinite;
+    animation-timing-function: linear;
+}
+.danmu li:nth-child(1){
+    font-size: 10px;
+    color: aqua;
+    animation-duration: 6s;
+}
+.danmu li:nth-child(2){
+    font-size: 40px;
+    animation-delay: 7s;
+    animation-duration: 12s;
+    color: plum;
+}
+.danmu li:nth-child(3){
+    font-size: 30px;
+    animation-delay: 2s;
+    animation-duration: 10s;
+    color: palevioletred;
+}
+.danmu li:nth-child(4){
+    font-size: 15px;
+    animation-delay: 1s;
+    animation-duration: 12s;
+    color: aqua;
+}
+.danmu li:nth-child(5){
+    font-size: 70px;
+    animation-delay: 0s;
+    animation-duration: 7s;
+    color: pink;
+}
+.danmu li:nth-child(6){
+    font-size: 50px;
+    animation-delay: 5s;
+    animation-duration: 15s;
+    color:pink;
+}
+.danmu li:nth-child(7){
+    font-size: 30px;
+    animation-delay: 7s;
+    animation-duration: 8s;
+    color: aqua;
+}
+.danmu li:nth-child(8){
+    font-size: 50px;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    color: aqua;
+}
+.danmu li:nth-child(9){
+    font-size: 25px;
+    animation-delay: 5s;
+    animation-duration: 4s;
+    color: pink;
+}
+.danmu li:nth-child(10){
+    font-size: 29px;
+    animation-delay: 5s;
+    animation-duration: 6s;
+    color: aquamarine;
+}
+@keyframes danmus{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(145%);}
+} 
